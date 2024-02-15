@@ -1,5 +1,44 @@
 image:
   file: .gitpod.Dockerfile
 
+ports:
+  - port: 3306
+    visibility: private
+    onOpen: ignore
+  - port: 5005
+    visibility: private
+    onOpen: ignore
+  - port: 5333
+    visibility: private
+    onOpen: ignore
+  - port: 5400
+    visibility: private
+    onOpen: ignore
+  - port: 5501
+    visibility: private
+    onOpen: ignore
+  - port: 9000
+    visibility: private
+    onOpen: ignore
+  - port: 9001
+    visibility: private
+    onOpen: ignore
+  - port: 9002
+    visibility: private
+    onOpen: ignore
+  - port: 9090
+    visibility: public
+    onOpen: ignore
+  - port: 9999
+    visibility: public
+    onOpen: ignore
+
+jetbrains:
+  intellij:
+    plugins:
+      - com.redhat.devtools.intellij.quarkus
+      -
+
+
 additionalRepositories:
   - url: https://github.com/zanfranceschi/rinha-de-backend-2024-q1
